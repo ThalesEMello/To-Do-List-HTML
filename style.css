@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/Background-photo.png");
+  background-color: #090909;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-task {
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+  padding: 0 10px;
+  background-color: #ffffff;
+}
+
+.button-task {
+  margin: 0 0 0 20px;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  padding: 0 10px;
+  background-color: #ffffff;
+  float: right;
+  cursor: pointer;
+}
+.button-task:hover {
+  opacity: 0.9;
+}
+.button-task:active {
+  font-weight: 700;
+  border: 2px solid #090909;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+.task-list img {
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.task-list .task {
+  list-style: none;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+.task:hover img {
+  opacity: 1;
+  cursor: pointer;
+}
