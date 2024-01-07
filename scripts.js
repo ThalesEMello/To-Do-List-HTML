@@ -1,8 +1,12 @@
-const button = document.querySelector('.button-task');
-const input = document.querySelector('.input-task');
+const button = document.querySelector(".button-task");
+const input = document.querySelector(".input-task");
 
-function GetInputValue(){
-  console.log(input.value)
+let MyItensList = [];
+
+function AddNewTask() {
+  MyItensList.push(input.value);
+
+  console.log(MyItensList);
 }
 
-button.addEventListener('click', GetInputValue)
+button.addEventListener("click", AddNewTask);
